@@ -1,33 +1,50 @@
-.box {
-    height: 150px;
-    width: 150px;
+body {
+    background-color: #222;
+    color: #eee;
+    position: absolute;
+}
+
+#gallery {
+    width: 90%;
     margin: auto;
-    margin-bottom: 15px;
-    transition: all 2s ease-in;
-    cursor: pointer;
+    text-align: center;
 }
 
-.red {
-    background-color: red;
+figure {
+    display: inline-block;
+    width: 33%;
+    margin: 0;
+    margin-bottom: 10px;
+    position: relative;
 }
 
-.red:hover {
-    width: 300px;
+figure img {
+    width: 200px;
+    height: auto;
 }
 
-.green {
-    background-color: green;
+section {
+    display: block;
 }
 
-.green:hover {
-    height: 300px;
+* {
+    box-sizing: border-box;
 }
 
-.blue {
-    background-color: blue;
+@media screen and (max-width: 992px) {
+    figure {
+        width: 49%;
+    }
 }
 
-.blue:hover {
-    width: 300px;
-    height: 300px;
+@media screen and (max-width: 768px) {
+    figure {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #gallery {
+        width: 100%;
+    }
 }
